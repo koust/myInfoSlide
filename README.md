@@ -29,3 +29,10 @@ Recommended resolution : 750 x 1334
   ## Manually
   1. Download and drop ```myInfoSlideController.swift``` and  ```mockup.png``` in your project.  
   2. Congratulations!  
+
+
+## Release History
+
+* 1.0
+  first commit
+  
