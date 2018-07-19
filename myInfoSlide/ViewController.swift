@@ -8,18 +8,26 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,myInfoSlideDelegate {
 
+ 
+    
+
+    let myInfoSlideVC = myInfoSlideController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        myInfoSlideVC.delegate        = self
+        myInfoSlideVC.yourView        = self.view
+        myInfoSlideVC.yourButtonTitle = "Geç"
+        myInfoSlideVC.dataImage     = [UIImage(named: "deneme1"),UIImage(named: "deneme2"),UIImage(named: "deneme3"),UIImage(named: "deneme4"),UIImage(named: "deneme5")] as! [UIImage]
+        myInfoSlideVC.dataTitle     = ["Ucuza tatil yapmak çok kolay","Detaylandırılmış kategoriler","Özel kampanya sayfası","İstediğiniz kampanyayı kaydedin","Artık ilginizi çekmiyor mu?"]
+        myInfoSlideVC.show()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func handlerAction(sender: UIButton) {
+        print("skip")
     }
-
 
 }
 

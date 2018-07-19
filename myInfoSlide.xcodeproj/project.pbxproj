@@ -14,6 +14,7 @@
 		5BA608952100C49100ABFA8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BA608932100C49100ABFA8D /* LaunchScreen.storyboard */; };
 		5BA608A02100C49100ABFA8D /* myInfoSlideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA6089F2100C49100ABFA8D /* myInfoSlideTests.swift */; };
 		5BA608AB2100C49200ABFA8D /* myInfoSlideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA608AA2100C49200ABFA8D /* myInfoSlideUITests.swift */; };
+		5BA608B92100C4AA00ABFA8D /* myInfoSlideController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA608B82100C4AA00ABFA8D /* myInfoSlideController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		5BA608A62100C49200ABFA8D /* myInfoSlideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myInfoSlideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BA608AA2100C49200ABFA8D /* myInfoSlideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myInfoSlideUITests.swift; sourceTree = "<group>"; };
 		5BA608AC2100C49200ABFA8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BA608B82100C4AA00ABFA8D /* myInfoSlideController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myInfoSlideController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				5BA608912100C49100ABFA8D /* Assets.xcassets */,
 				5BA608932100C49100ABFA8D /* LaunchScreen.storyboard */,
 				5BA608962100C49100ABFA8D /* Info.plist */,
+				5BA608B82100C4AA00ABFA8D /* myInfoSlideController.swift */,
 			);
 			path = myInfoSlide;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BA6088D2100C49000ABFA8D /* ViewController.swift in Sources */,
+				5BA608B92100C4AA00ABFA8D /* myInfoSlideController.swift in Sources */,
 				5BA6088B2100C49000ABFA8D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
