@@ -24,12 +24,45 @@ Recommended resolution : 750 x 1334
 
 # Installation
 
+   ## CocoaPods
+   You can use [CocoaPods](http://cocoapods.org/) to install `myInfoSlide` by adding it to your `Podfile`:
 
+   ```ruby
+    platform :ios, '9.0'
+    use_frameworks!
+    pod 'myInfoSlide'
+   ```
 
   ## Manually
   1. Download and drop ```myInfoSlideController.swift``` and  ```mockup.png``` in your project.  
   2. Congratulations!  
 
+
+# Usage 
+
+```swift
+    let myInfoSlideVC = myInfoSlideController()
+        myInfoSlideVC.delegate        = self
+        myInfoSlideVC.yourView        = self.view
+        myInfoSlideVC.yourButtonTitle = "Atla"
+        myInfoSlideVC.dataImage     = [UIImage(named: "deneme1"),UIImage(named: "deneme2"),UIImage(named: "deneme3"),UIImage(named: "deneme4"),UIImage(named: "deneme5")] as! [UIImage]
+        myInfoSlideVC.dataTitle     = ["Ucuza tatil yapmak çok kolay","Detaylandırılmış kategoriler","Özel kampanya sayfası","İstediğiniz kampanyayı kaydedin","Artık ilginizi çekmiyor mu?"]
+        myInfoSlideVC.show()
+```
+
+You can add ```myInfoSlideDelegate``` class.  For handler button
+
+```swift
+   func handlerAction(sender: UIButton) {
+        print("skip")
+   }
+```
+
+
+## Notes:
+
+- currently only works on portrait mode.
+- untested ipad device
 
 ## Release History
 
