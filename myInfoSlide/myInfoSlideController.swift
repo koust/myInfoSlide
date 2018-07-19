@@ -30,15 +30,13 @@ public class myInfoSlideController: UIViewController {
     public  var yourFontName:String         = "Avenir-Light"
     
     
-    private var myView                      = UIView()
-    private let myButton                    = UIButton()
-    private let myTitle                     = UILabel()
-    private let mockUp                      = UIImageView()
-    private let contentImage                = UIImageView()
-    private let pageControl                 = UIPageControl()
-    private var mockUpHeight:CGFloat        = 550
-    
-    
+    private var myView                          = UIView()
+    private let myButton                        = UIButton()
+    private let myTitle                         = UILabel()
+    private let mockUp                          = UIImageView()
+    private let contentImage                    = UIImageView()
+    private let pageControl                     = UIPageControl()
+    private var mockUpHeight:CGFloat            = 550
     private var contentImageTopconstant:CGFloat = 100
     
     
@@ -102,7 +100,7 @@ public class myInfoSlideController: UIViewController {
     
     private func createMockUp() {
     mockUp.translatesAutoresizingMaskIntoConstraints               = false
-    mockUp.image                                                   = UIImage(named:"mockup")
+    mockUp.image                                                   = UIImage(named: "mockup", in: Bundle(for: type(of: self)), compatibleWith: nil)
     mockUp.contentMode                                             = .bottom
 
     deviceScreenSize()
@@ -120,17 +118,17 @@ public class myInfoSlideController: UIViewController {
         if UIDevice().userInterfaceIdiom == .phone {
             switch UIScreen.main.nativeBounds.height {
             case 1136:
-                mockUpHeight        = 400
-                mockUp.contentMode  = .scaleAspectFit
+                mockUpHeight            = 400
+                mockUp.contentMode      = .scaleAspectFit
                 contentImageTopconstant = 57
             case 1334:
                 break
             case 1920, 2208:
                 break
             case 2436:
-                print("iPhone X")
+                break
             default:
-                print("unknown")
+                break
             }
         }
 
@@ -176,7 +174,7 @@ public class myInfoSlideController: UIViewController {
     @objc  private func handleGesture(gesture: UISwipeGestureRecognizer) -> Void {
         
         if gesture.direction == .left {
-            if pageControl.currentPage < dataImage.count {
+            if pageControl.currentPage < dataImage.count-1 {
               pageControl.currentPage = pageControl.currentPage + 1
                 
                 previewAnimation()
@@ -200,11 +198,11 @@ public class myInfoSlideController: UIViewController {
     }
     
     private func previewAnimation(){
-        self.contentImage.alpha          = 0
-        self.myTitle.alpha               = 0
+            self.contentImage.alpha          = 0
+            self.myTitle.alpha               = 0
         UIView.animate(withDuration: 0.3, animations: {
-            self.contentImage.alpha      = 1.0
-            self.myTitle.alpha           = 1.0
+            self.contentImage.alpha          = 1.0
+            self.myTitle.alpha               = 1.0
         })
     }
     

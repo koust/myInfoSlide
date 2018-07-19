@@ -10,9 +10,7 @@ s.platform     = :ios, "9.0"
 s.swift_version = "4.0"
 s.source       = { :git => "https://github.com/koust/myInfoSlide.git", :tag => s.version }
 s.source_files  = "myInfoSlide/myInfoSlideController.swift"
-s.resources = 'myInfoSlide/Assets/*'
-s.resource_bundles = {
-'myInfoSlide' => ['myInfoSlide/Assets/*']
-}
+s.resources = 'myInfoSlide/mockup.png'
+
 s.requires_arc = true
 end
