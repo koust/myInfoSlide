@@ -8,11 +8,11 @@
 
 import UIKit
 
-protocol myInfoSlideDelegate {
+public protocol myInfoSlideDelegate {
     func handlerAction(sender:UIButton)
 }
 
-class myInfoSlideController: UIViewController {
+public class myInfoSlideController: UIViewController {
     
     
     public var delegate:myInfoSlideDelegate?
