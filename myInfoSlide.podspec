@@ -12,7 +12,7 @@ s.source       = { :git => "https://github.com/koust/myInfoSlide.git", :tag => s
 s.source_files  = "myInfoSlide/myInfoSlideController.swift"
 s.resources = 'myInfoSlide/Assets/*'
 s.resource_bundles = {
-'SwiftWebVCResources' => ['SwiftWebVC/Assets/*']
+'myInfoSlide' => ['myInfoSlide/Assets/*']
 }
 s.requires_arc = true
 end
