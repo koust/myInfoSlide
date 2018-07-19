@@ -1,1 +1,11 @@
-# myInfoSlide
+![iOS 9.0+](https://img.shields.io/badge/iOS-9.0%2B-blue.svg)
+![Swift 4.0+](https://img.shields.io/badge/Swift-4.0%2B-orange.svg)
+![CocoaPods](https://img.shields.io/cocoapods/v/AFNetworking.svg)
+[![Build Status](https://travis-ci.org/TBXark/PinterestSegment.svg?branch=master)](https://travis-ci.org/TBXark/PinterestSegment)
+
+# Welcome to myInfoSlide!
+
+  Presentation helps you to make tutorials, release notes and animated pages.
+
+![](gorsel.gif)
+
