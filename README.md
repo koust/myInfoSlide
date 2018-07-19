@@ -5,7 +5,27 @@
 
 # Welcome to myInfoSlide!
 
-  Presentation helps you to make tutorials, release notes and animated pages.
+  Presentation helps you to make tutorials, release notes and animated pages. It is enough to just throw the visuals. The phone image is available in the library. 
+
+Recommended resolution : 750 x 1334
+
+
 
 ![](gorsel.gif)
 
+
+# Requirements
+
+- iOS 9.0+
+- Xcode 9.0
+- Swift 4
+
+
+
+# Installation
+
+
+
+  ## Manually
+  1. Download and drop ```myInfoSlideController.swift``` and  ```mockup.png``` in your project.  
+  2. Congratulations!  
