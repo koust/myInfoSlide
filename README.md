@@ -57,7 +57,19 @@ You can add ```myInfoSlideDelegate``` class.  For handler button
         print("skip")
    }
 ```
-
+ 
+ ## Customization
+   
+   ```swift
+    public  var yourViewBg                  = UIColor.white
+    public  var yourButtonBg                = UIColor.white
+    public  var yourButtonTitleColor        = UIColor.black
+    public  var yourButtonWidth:CGFloat     = 45
+    public  var yourButtonTitle             = "Skip"
+    public  var yourTitleColor              = UIColor.black
+    public  var yourTitleSize: CGFloat      = 16
+    public  var yourFontName:String         = "Avenir-Light"
+   ``` 
 
 ## Notes:
 
