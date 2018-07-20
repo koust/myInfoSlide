@@ -1,4 +1,6 @@
+osx_image: xcode7.3
 language: swift
-osx_image: xcode9
-script:
-    - xcodebuild clean test -project myInfoSlide.xcodeproj -scheme myInfoSlide -destination "platform=iOS Simulator,name=iPhone 7,OS=10.3" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -quiet
+
+xcode_project: myInfoSlide/myInfoSlide.xcodeproj
+xcode_scheme: myInfoSlide
+xcode_sdk: iphonesimulator
